@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &:focus{
+    outline: none;
+  }
+  &:active{
+    outline: none;
+  }
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+button{
+  border: none;
+}
+ul{
+  list-style: none;
+}
+@mixin text($fz, $lh, $fw, $color){
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $color;
+}
+@mixin btn($fz, $lh, $fw, $color, $bg, $rad){
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $color;
+  background: $bg;
+  border-radius: $rad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+$primary-color: #FFD600;
+$secondary-color: #FFBE35;
+.title{
+  
+}

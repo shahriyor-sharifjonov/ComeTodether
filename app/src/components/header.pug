@@ -1,1 +1,23 @@
-
+mixin header()
+  header.header 
+    navbar.header__nav.container
+      a(href="index.html").header__logo
+        img(src="images/logo.webp", alt="ComeTogether").header__logo-img
+      .header__menu
+        ul.header__list
+          li.header__li 
+            a(href="#!").header__link Головна
+          li.header__li 
+            a(href="#!").header__link Про школу
+          li.header__li 
+            a(href="#!").header__link Викладачі
+          li.header__li 
+            a(href="#!").header__link Курс
+          li.header__li 
+            a(href="#!").header__link Ціни
+          li.header__li 
+            a(href="#!").header__link Контакти
+        a(href="#!").header__btn Пробне заняття 
+      button.header__button 
+        span.header__button-line
+  
