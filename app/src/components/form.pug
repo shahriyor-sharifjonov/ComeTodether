@@ -1,0 +1,17 @@
+mixin form()
+  .form 
+    .form__body.container 
+      h1.form__title Заявка на пробне заняття
+      .form__row  
+        form.form__item.form__content
+          input(type="text" required placeholder="Ім’я").form__input
+          input(type="text" required placeholder="Телефон").form__input
+          button(type="submit").form__btn Записатись
+        .form__item
+          h2.form__item-title.icon-time Тривалість заняття <span class="form__item-p">- 30 хвилин</span>
+          h2.form__item-title.icon-mic Знайомство з викладачем 
+          p.form__item-p Розкажи яких результатів ти хочеш досягнути
+          h2.form__item-title.icon-sound Тривалість заняття
+          p.form__item-p Запитай у викладача що тебе цікавить, не соромся ставити запитання
+          h2.form__item-title.icon-music Тривалість заняття
+          p.form__item-p Індивідуальна програма для кожного учня

@@ -19,6 +19,8 @@ a{
 button{
   border: none;
   background: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 ul{
   list-style: none;
@@ -43,6 +45,27 @@ ul{
 }
 $primary-color: #FFD600;
 $secondary-color: #FFBE35;
-.title{
-  
+.icon-time{
+  &::before{
+    content: url('../images/time.webp');
+    height: 38px;
+  }
+}
+.icon-mic{
+  &::before{
+    content: url('../images/mic.webp');
+    height: 38px;
+  }
+}
+.icon-sound{
+  &::before{
+    content: url('../images/sound.webp');
+    height: 38px;
+  }
+}
+.icon-music{
+  &::before{
+    content: url('../images/music-icon.webp');
+    height: 38px;
+  }
 }
