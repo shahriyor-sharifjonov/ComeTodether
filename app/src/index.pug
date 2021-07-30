@@ -17,5 +17,8 @@ html(lang="en")
     +about 
     include components/types.pug 
     +types 
-    script(src="scripts/https://unpkg.com/swiper/swiper-bundle.min.js") 
+    include components/slider.pug 
+    +slider 
+    script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+    script(src="scripts/slider.js")
     script(src="scripts/index.js") 

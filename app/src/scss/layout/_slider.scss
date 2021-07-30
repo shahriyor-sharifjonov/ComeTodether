@@ -1,0 +1,104 @@
+.slider {
+  width: 100%;
+  height: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 200px;
+  @include media(768){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__main-title{
+    margin-bottom: 35px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    color: #000000;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 40px;
+    width: 50%;
+    @include media(1400){
+      padding-left: 0;
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  &__p{
+    text-align: left;
+    max-width: 80%px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+  &__btn{
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 53px;
+    padding: 16px 43px;
+  }
+  &__pagination{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-button-prev{
+    color: #000;
+    width: 40px;
+    height: 40px;
+  }
+  &-button-next{
+    color: #000;
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 90%;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    @include media(1400){
+      flex-direction: column;
+    }
+    @include media(768){  
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 100%;
+    @include media(1400){
+      width: 100%;
+    }
+  }
+}
