@@ -10,8 +10,9 @@
     color: #000000;
     @include media($lg){
       font-size: 26px;
-      line-height: 22%;
+      line-height: 36px;
       margin-bottom: 40px;
+      display: inline-block;
     }
   }
   &__row{
