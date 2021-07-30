@@ -69,3 +69,11 @@ $secondary-color: #FFBE35;
     height: 38px;
   }
 }
+.icon-golden-location{
+  max-width: 300px;
+  &::before{
+    content: url('../images/golden-location.webp');
+    height: 45px;
+    margin-right: 8px;
+  }
+}
