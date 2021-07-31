@@ -1,0 +1,24 @@
+.rules{
+  &__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    margin-top: 65px;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+  }
+  &__p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 70px;
+  }
+}
