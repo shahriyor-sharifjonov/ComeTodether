@@ -1,0 +1,187 @@
+.musictypes{
+  &-top{
+    background: #FFD600;
+    &__body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 96px;
+      line-height: 131px;
+      color: #000000;
+      padding-top: 40px;
+      margin-bottom: 60px;
+      @include media(1200){
+        font-size: 75px;
+        line-height: 120%;
+      }
+      @include media($md){
+        font-size: 44px;
+      }
+    }
+    &__row{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 100px;
+      @include media(1200){
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &__p{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000000;
+      max-width: 50%;
+      @include media(1200){
+        max-width: 100%;
+        margin-bottom: 0;
+      }
+      @include media($md){
+        font-size: 16px;
+        line-height: 120%;
+      }
+    }
+    &__img{
+      max-width: 50%;
+      @include media(1200){
+        order: -1;
+        margin-bottom: 40px;
+        max-width: 100%;
+      }
+      @include media($md){
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &-middle{
+    background: #000000;
+    &__body{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      @include media(1200){
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+    &__p{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 33px;
+      color: #FFFFFF;
+      @include media($md){
+        font-size: 18px;
+        line-height: 120%;
+      }
+    }
+    &__imgs{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      @include media(1200){
+        order: -1;
+        margin-bottom: 50px;
+      }
+      @include media($md){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &__img{
+      margin-left: 70px;
+      &:first-child{
+        margin-left: 0px;
+        @include media($md){
+          margin-bottom: 35px;
+        }
+      }
+      @include media($md){
+        margin-left: 0;
+      }
+    }
+  }
+  &-bottom{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 49px;
+      color: #000000;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      @include media($md){
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+    &__row{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 100%;
+      padding-bottom: 100px;
+      @include media(992){
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+    &__item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:first-child{
+        @include media(992){
+          margin-bottom: 50px;
+        }
+      }
+      &-p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #000000;
+        @include media($md){
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+      }
+      &-btn{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background: #000;
+        border-radius: 20px;
+        padding: 6px 12px;
+      }
+    }
+    &__img{
+      max-width: 100%;
+    }
+  }
+}

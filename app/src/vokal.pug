@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2 
+    .musictypes 
+      .musictypes-top
+        .musictypes-top__body.container 
+          h1.musictypes-top__title Вокал
+          .musictypes-top__row 
+            .musictypes-top__p Уроки вокалу - це надзвичайно захоплююче заняття для вас чи вашої дитини. Окрім того що Ви покращите свої вокальні навички,  Ви також отримаєте багато позитивних емоцій та цікавих лайфхаків, які допоможуть Вам закохатись у свій голос. <br>Наші викладачі працюють за сучасними методиками, знаходять індивідуальний підхід до кожного учня. Педагог допоможе Вам  не тільки оволодіти різними вокальними прийомами, а також  допоможе вам перебороти «страх перед сценою». <br>На заняттях з тобою підберуть правильний репертуар, який розкриє весь потенціал твого голосу
+            img(src="images/vokalbg.webp", alt="Вокал").musictypes-top__img
+      .musictypes-middle
+        .musictypes-middle__body.container 
+          .musictypes-middle__texts
+            p.musictypes-middle__p На уроках вокалу ви навчитесь: 
+            p.musictypes-middle__p 1.	Володіти своїм голосом;
+            p.musictypes-middle__p 2.	Правильному вокальному диханню ;
+            p.musictypes-middle__p 3.	Співати на опорі; 
+            p.musictypes-middle__p 4.	Чисто інтонувати;
+            p.musictypes-middle__p 5.	Працювати з мікрофоном;
+            p.musictypes-middle__p 6.	Співати в різних стилях.
+          .musictypes-middle__imgs
+            img(src="images/middle-1.webp", alt="middle").musictypes-middle__img
+            img(src="images/middle-2.webp", alt="middle").musictypes-middle__img
+      .musictypes-bottom 
+        .musictypes-bottom__body.container
+          h2.musictypes-bottom__title Викладачі вокалу
+          .musictypes-bottom__row 
+            .musictypes-bottom__item
+              img(src="images/bottom1.webp", alt="bottom").musictypes-bottom__img
+              h3.musictypes-bottom__item-p Адамчук Надія
+              a(href="#!").musictypes-bottom__item-btn Детальніше 
+            .musictypes-bottom__item
+              img(src="images/bottom2.webp", alt="bottom").musictypes-bottom__img
+              h3.musictypes-bottom__item-p Пухно Валерия
+              a(href="#!").musictypes-bottom__item-btn Детальніше 
+    include components/footer.pug 
+    +footer 
+    script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+    script(src="scripts/index.js") 
