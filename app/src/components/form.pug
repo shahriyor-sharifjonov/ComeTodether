@@ -3,7 +3,7 @@ mixin form()
     .form__body.container 
       h1.form__title Заявка на пробне заняття
       .form__row  
-        form.form__item.form__content
+        form(action="send.html").form__item.form__content
           input(type="text" required placeholder="Ім’я").form__input
           input(type="text" required placeholder="Телефон").form__input
           button(type="submit").form__btn Записатись

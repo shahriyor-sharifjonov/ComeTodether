@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2
+    .send 
+      h1.send__title Бульк! Ми отримали вашу заявкуЧекайте дзвінка
+      img(src="images/send.webp", alt="mail sending").send__img
+    include components/footer.pug 
+    +footer 
+    script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+    script(src="scripts/slider.js")
+    script(src="scripts/index.js") 

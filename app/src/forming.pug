@@ -13,13 +13,13 @@ html(lang="en")
     +header2
     .forming 
       h1.forming__title Заявка на пробне заняття
-      form(action="").forming__form
+      form(action="send.html").forming__form
         img(src="images/looking.webp", alt="looking").forming__el.forming__el_1
         img(src="images/success.webp", alt="success").forming__el.forming__el_2
         img(src="images/hello.webp", alt="hello").forming__el.forming__el_3
         img(src="images/music.webp", alt="music").forming__el.forming__el_4
-        input(type="text" placeholder="Ім’я").forming__input  
-        input(type="text" placeholder="Телефон").forming__input  
+        input(type="text" placeholder="Ім’я" required).forming__input  
+        input(type="text" placeholder="Телефон" required).forming__input  
         button(type="submit").forming__btn Записатись
     include components/footer.pug 
     +footer 
