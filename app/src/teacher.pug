@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2 
+    .teacher 
+      .teacher__body.container 
+        h1.teacher__title Адамчук Надія
+        .teacher__row 
+          .teacher__item
+            p.teacher__p Адамчук Надія – засновник Музичного простору «Come Together» і по сумісництву викладач вокалу. Професійна співачка, лаурет багатьох міжнародних конкурсів, співала у різних музичних гуртах, а зараз займається своїм авторським матеріалом. 
+          .teacher__item
+            img(src="images/adamchuk.webp", alt="adamchuk").teacher__item-img
+        .teacher__img-parent
+          img(src="images/adamchuk2.webp", alt="adamchuk").teacher__img_big
+        p.teacher__p.teacher__p_big У 2019 виступала на Leopolis Jazz fest у хорі американського джазового співака, десятикратного лауреата премії Греммі Боббі Мекферріна. Брала участь у студійних записах бек-вокалу для відомих українських виконавців. <br><br>«Я обожнюю музику і це для мене не тільки хобі, а й справа всього життя.  Якщо ти хочеш співати, то я з радістю стану твоїм наставником і буду допомагати у всьому. Разом ми розкриємо твій талант і ти побачиш, що твій голос – це твоя “родзинка”. На заняттях ми попрацюємо над  диханням, інтонацією , дикцією і над різними вокальними “лайфхаками”. Цілеспрямованість і наполеглива праця дадуть свої результати. Я обожнюю створювати творчу атмосферу, заряджати, надихати своїх учнів та закохувати їх у музику. 
+        .teacher__img_bottom
+          img(src="images/adamchuk3.webp", alt="adamchukmi bu").teacher__img_bottom__img
+        p.teacher__p.teacher__p_big Мій досвід викладання 4 роки, за цей період створила свою власну професійну методику ( засновану на елементах традиційної та нової школи викладання вокалу ). Вона направлена в першу чергу на розкриття вашого природного голосу. Вдало знаходжу підхід до кожного учня: як до дітей, так і до дорослих. Працюю у таких напрямах: поп, фольк, джаз, фанк. <br><br><br>Заняття  з вокалу – це не лише купа інформації від викладача, а ще й ваше бажання в сумі з наполегливістю і хорошим настроєм». 
+        p.teacher__bold «Долучайся до нашої творчої родини, де ми будемо творити і витворяти». <br>Музичний простір «Come Together» - #твій_простір_для_творчості 
+        a(href="forming.html").teacher__btn Записатись 
+    include components/footer.pug 
+    +footer
+    script(src="scripts/index.js") 

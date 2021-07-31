@@ -1,0 +1,124 @@
+.teacher{
+  &__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    margin-top: 65px;
+    margin-bottom: 25px;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include media($lg){
+      flex-direction: column;
+    }
+    p{
+      max-width: 442px;
+      width: 100%;
+      @include media($lg){
+        max-width: max-content;
+      }
+    }
+  }
+  &__item{
+    width: 50%;
+    margin-bottom: 100px;
+    @include media($lg){
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    &:first-child{
+      @include media($lg){
+        order: 1;
+      }
+    }
+    &-img{
+      width: 100%;
+    }
+  }
+  &__p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    @include media($lg){
+      font-size: 18px;
+      line-height: 120%;
+    }
+    &_big{
+      margin-bottom: 70px;
+      @include media($lg){
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__img{
+    &-parent{
+      position: relative;
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 70px;
+      @include media($lg){
+        margin-bottom: 25px;
+      }
+      &::before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-left: 85px solid #fff;
+        border-bottom: 50px solid transparent;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+    }
+  }
+  &__img_big{
+    max-width: 100%;
+    width: 100%;
+  }
+  &__img_bottom__img{
+    max-width: 100%;
+    margin-bottom: 70px;
+    @include media($lg){
+      margin-bottom: 25px;
+    }
+  }
+  &__bold{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 37px;
+    @include media($md){
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+  &__btn{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+    background: #FFD600;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    padding: 14px 17px;
+    @include media($md){
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+}
