@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2 
+    .teachers 
+      .teachers__body.container 
+        h1.teachers__title Команда ComeTogether
+        .teachers__item
+          h2.teachers__item-title Адамчук Надія
+          .teachers__item-row
+            .teachers__item-texts 
+              p.teachers__item-p Адамчук Надія – засновник Музичного простору «Come Together» і по сумісництву викладач вокалу. Професійна співачка, лаурет багатьох міжнародних конкурсів, співала у різних музичних гуртах, а зараз займається своїм авторським матеріалом. <br>“Заняття  з вокалу – це не лише купа інформації від викладача, а ще й ваше бажання в сумі з наполегливістю і хорошим настроєм”.
+            .teachers__item-imgs  
+              img(src="images/teacher1.webp", alt="teacher").teachers__item-img
+              .teachers__item-btns 
+                a(href="teacher.html").teachers__item-btn Детальніше
+                a(href="forming.html").teachers__item-btn Пробне заняття
+        .teachers__item
+          h2.teachers__item-title Пухно Валерия
+          .teachers__item-row
+            .teachers__item-imgs  
+              img(src="images/teacher2.webp", alt="teacher").teachers__item-img
+              .teachers__item-btns 
+                a(href="teacher.html").teachers__item-btn Детальніше
+                a(href="forming.html").teachers__item-btn Пробне заняття
+            .teachers__item-texts 
+              p.teachers__item-p Профессиональная певица, лауреат многих вокальных конкурсов, большой опыт концертной деятельности. <br>За время преподавания многие ученики достигали огромных успехов в вокально-сценической деятельности (поступали в музыкальные ВУЗы страны, становились лауреатами различных фестивалей и конкурсов и т.д.). <br>Уроки строятся интересно и продуктивно (каждый урок привносит что-то новое). 
+        .teachers__item
+          h2.teachers__item-title Ковтун Виктор
+          .teachers__item-row
+            .teachers__item-texts 
+              p.teachers__item-p Даю уроки академического вокала. Благодаря занятиям у вас появится возможность: поставить голос, увеличить его диапазон, силу, подвижность, полётность, объём и яркость голоса; подготовиться к вступительным экзаменам в средние и высшие учебные музыкальные заведения; сформировать свой индивидуальный репертуар; поставить концертный или конкурсный номер; заниматься вокалом в своё удовольствие.
+            .teachers__item-imgs
+              img(src="images/teacher3.webp", alt="teacher").teachers__item-img
+              .teachers__item-btns 
+                a(href="teacher.html").teachers__item-btn Детальніше
+                a(href="forming.html").teachers__item-btn Пробне заняття
+        .teachers__item
+          h2.teachers__item-title Фурманова Василиса
+          .teachers__item-row
+            .teachers__item-imgs  
+              img(src="images/teacher4.webp", alt="teacher").teachers__item-img
+              .teachers__item-btns 
+                a(href="teacher.html").teachers__item-btn Детальніше
+                a(href="forming.html").teachers__item-btn Пробне заняття
+            .teachers__item-texts 
+              p.teachers__item-p Профессиональная певица, лауреат многих вокальных конкурсов, большой опыт концертной деятельности. <br>За время преподавания многие ученики достигали огромных успехов в вокально-сценической деятельности (поступали в музыкальные ВУЗы страны, становились лауреатами различных фестивалей и конкурсов и т.д.). <br>Уроки строятся интересно и продуктивно (каждый урок привносит что-то новое). 
+    include components/footer.pug 
+    +footer
+    script(src="scripts/index.js") 
