@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2
+    .forming 
+      h1.forming__title Заявка на пробне заняття
+      form(action="").forming__form
+        img(src="images/looking.webp", alt="looking").forming__el.forming__el_1
+        img(src="images/success.webp", alt="success").forming__el.forming__el_2
+        img(src="images/hello.webp", alt="hello").forming__el.forming__el_3
+        img(src="images/music.webp", alt="music").forming__el.forming__el_4
+        input(type="text" placeholder="Ім’я").forming__input  
+        input(type="text" placeholder="Телефон").forming__input  
+        button(type="submit").forming__btn Записатись
+    include components/footer.pug 
+    +footer 
+    script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+    script(src="scripts/slider.js")
+    script(src="scripts/index.js") 
