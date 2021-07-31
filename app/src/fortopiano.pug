@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2 
+    .musictypes 
+      .musictypes-top
+        .musictypes-top__body.container 
+          h1.musictypes-top__title Фортепіано
+          .musictypes-top__row 
+            .musictypes-top__p Чим би ви не планували займатись в галузі музики, Вам необхідний принаймні базовий курс гри на фортепіано. <br>Фортепіано називають королем музичних інструментів. Воно удостоїлося цього звання з безлічі причин. Наприклад, за його діапазон , за здатність одночасно виконувати і мелодію, і акомпанемент. Крім того, це найбільший музичний інструмент , найгнучкіший, багатоплановий і цікавий щодо виконавських прийомів і звучання. <br>Найкращий спосіб навчитися грати на фортепіано – це індивідуальні заняття.  
+            img(src="images/fortopianobg.webp", alt="Вокал").musictypes-top__img
+      .musictypes-middle
+        .musictypes-middle__body.container 
+          .musictypes-middle__texts
+            p.musictypes-middle__p На уроках фортепіано ви навчитесь: 
+            p.musictypes-middle__p 1.	Акомпонувати собі;
+            p.musictypes-middle__p 2.	Підбирати мелодію на слух;
+            p.musictypes-middle__p 3.	Грати у різних стилях;
+            p.musictypes-middle__p 4.	Писати музичні кавери;
+            p.musictypes-middle__p 5.	Грати по нотах;
+            p.musictypes-middle__p 6.	Висловлювати через музику свої власні емоції. 
+            p.musictypes-middle__p 1.	Володіти своїм голосом;
+            p.musictypes-middle__p 2.	Правильному вокальному диханню ;
+            p.musictypes-middle__p 3.	Співати на опорі; 
+            p.musictypes-middle__p 4.	Чисто інтонувати;
+            p.musictypes-middle__p 5.	Працювати з мікрофоном;
+            p.musictypes-middle__p 6.	Співати в різних стилях.
+          .musictypes-middle__imgs
+            img(src="images/forto1.webp", alt="middle").musictypes-middle__img
+            img(src="images/forto2.webp", alt="middle").musictypes-middle__img
+      .musictypes-bottom 
+        .musictypes-bottom__body.container
+          h2.musictypes-bottom__title Викладачі вокалу
+          .musictypes-bottom__row 
+            .musictypes-bottom__item
+              img(src="images/bottom-3.webp", alt="bottom").musictypes-bottom__img
+              h3.musictypes-bottom__item-p Пухно Валерия
+              a(href="#!").musictypes-bottom__item-btn Детальніше 
+            .musictypes-bottom__item
+              img(src="images/bottom2.webp", alt="bottom").musictypes-bottom__img
+              h3.musictypes-bottom__item-p Пухно Валерия
+              a(href="#!").musictypes-bottom__item-btn Детальніше 
+    include components/footer.pug 
+    +footer 
+    script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+    script(src="scripts/index.js") 

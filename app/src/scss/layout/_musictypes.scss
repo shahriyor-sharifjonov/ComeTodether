@@ -27,6 +27,7 @@
       justify-content: space-between;
       align-items: flex-start;
       margin-bottom: 100px;
+      width: 100%;
       @include media(1200){
         flex-direction: column;
         align-items: center;
@@ -38,7 +39,7 @@
       font-size: 18px;
       line-height: 25px;
       color: #000000;
-      max-width: 50%;
+      max-width: 520px;
       @include media(1200){
         max-width: 100%;
         margin-bottom: 0;
@@ -78,11 +79,10 @@
       font-style: normal;
       font-weight: normal;
       font-size: 24px;
-      line-height: 33px;
+      line-height: 120%;
       color: #FFFFFF;
-      @include media($md){
+      @include media(1400){
         font-size: 18px;
-        line-height: 120%;
       }
     }
     &__imgs{
