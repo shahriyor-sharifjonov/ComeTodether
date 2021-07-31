@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2 
+    .kurs  
+      .kurs__body.container 
+        .kurs__top 
+          h1.kurs__top-title Курс
+          .kurs__top-row 
+            .kurs__top-item
+              img(src="images/looking.webp", alt="looking").kurs__top-img
+            .kurs__top-item
+              img(src="images/success.webp", alt="success").kurs__top-img
+            .kurs__top-item
+              img(src="images/hello.webp", alt="hello").kurs__top-img
+            .kurs__top-item
+              img(src="images/music.webp", alt="music").kurs__top-img
+        .kurs__bottom 
+          .kurs__bottom-item 
+            h2.kurs__bottom-item__title Вокал
+            img(src="images/kurs1.webp", alt="Вокал").kurs__bottom-item__img
+            p.kurs__bottom-item__p • Дихальна гімнастика <br>• Розспівка <br>• Постановка голосу <br>• Підбір репертуару <br>• Практика
+            a(href="forming.html").kurs__bottom-item__btn Купити
+          .kurs__bottom-item 
+            h2.kurs__bottom-item__title Фортепіано
+            img(src="images/kurs2.webp", alt="Вокал").kurs__bottom-item__img
+            p.kurs__bottom-item__p • Вивчення базової теорії  <br>• Постановка рук <br>• Підбір репертуару <br>• Розбір композицій <br>• Практика
+            a(href="forming.html").kurs__bottom-item__btn Купити
+          .kurs__bottom-item 
+            h2.kurs__bottom-item__title Гітара
+            img(src="images/kurs3.webp", alt="Вокал").kurs__bottom-item__img
+            p.kurs__bottom-item__p • Постановка рук <br>• Забезпечення навчальним матеріалом <br>• Підбір творів з учнем <br>• Практика
+            a(href="forming.html").kurs__bottom-item__btn Купити
+          .kurs__bottom-item 
+            h2.kurs__bottom-item__title Акторська майстрерність
+            img(src="images/kurs4.webp", alt="Вокал").kurs__bottom-item__img
+            p.kurs__bottom-item__p • Ораторське мистецтво <br>• Сценічна пластика <br>• Розвиток фантазії, творчого мислення <br>• Практика
+            a(href="forming.html").kurs__bottom-item__btn Купити
+
+    include components/footer.pug 
+    +footer
+    script(src="scripts/index.js") 

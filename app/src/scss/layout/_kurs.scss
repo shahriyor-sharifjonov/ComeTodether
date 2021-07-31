@@ -1,0 +1,117 @@
+.kurs{
+  &__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  &__top{
+    width: 100%;
+    &-title{
+      margin-top: 40px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 45px;
+      text-align: center;
+      color: #000000;
+    }
+    &-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+      margin-top: 25px;
+      width: 100%;
+      @include media($md){
+        flex-wrap: wrap;
+      }
+    }
+    &-item{
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include media(400){
+        width: 100%;
+      }
+    }
+  }
+  &__bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 100px;
+    @include media(1200){
+      flex-wrap: wrap;
+    }
+    &-item{
+      background: #FFBE35;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 20px;
+      width: 33.333%;
+      margin-right: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 30px;
+      @include media(1200){
+        width: calc(50% - 30px);
+        margin-bottom: 40px;
+      }
+      @include media($md){
+        width: 100%;
+        margin-right: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      &:nth-child(2){
+        @include media(1200){
+          margin-right: 0;
+        }
+      }
+      &__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 29px;
+        text-align: center;
+        color: #000000;
+        margin-left: -15px;
+        margin-right: -15px;
+        height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &__img{
+        max-width: 100%;
+      }
+      &__p{
+        margin-top: 24px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+      }
+      &__btn{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        color: #000000;
+        padding: 12px 44px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        max-width: max-content;
+        margin-top: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2 
+    .contact  
+      .contact__body.container 
+        h1.contact__title Контакти 
+        .contact__row   
+          .contact__item  
+            img(src="images/map.webp", alt="map").contact__img
+          .contact__item 
+            p.icon-golden-location.contact__item__link вул. Златоустівська 2/4, 11 офіс (4 поверх)
+            a(href="tel:+38(099)413-59-60").contact__item__link +38(099)413-59-60
+            a(href="forming.html").contact__item__btn Записатись 
+    include components/footer.pug 
+    +footer 
+    script(src="scripts/index.js") 
