@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2 
+    .musictypes 
+      .musictypes-top
+        .musictypes-top__body.container 
+          h1.musictypes-top__title Акторська майстерність
+          .musictypes-top__row 
+            .musictypes-top__p Акторська майстерність – це курс розкриття природного таланту особистості; <br>вміння відкривати себе, показувати веселі, сумні моменти з життя на аудиторію. <br> <br>Уроки  акторської майстерності  проводяться по міні-групах:  <br>І група – від 5 до 8 років.  <br>ІІ група – від 9 до 12 років.  <br>ІІІ  група – від 13 до 17 років.  <br>ІV група – з 18 років.  <br>Абонемент на групові заняття - 4 уроки 850 грн. Заняття проводяться 1 раз на тиждень <br>А також є індивідуальні заняття (уроки проводяться у зручний для вас час)
+            img(src="images/gitarabg.webp", alt="Вокал").musictypes-top__img
+      .musictypes-middle
+        .musictypes-middle__body.container 
+          .musictypes-middle__texts
+            p.musictypes-middle__p На заняттях акторськї майстерності ти: 
+            p.musictypes-middle__p Навчишся працювати в колективі;
+            p.musictypes-middle__p Покращиш свій рівень ораторського мистецтва;
+            p.musictypes-middle__p Набудеш досвід виступів перед публікою; 
+            p.musictypes-middle__p Позбудешся внутрішніх «зажимів»; 
+            p.musictypes-middle__p Навчишся основним принципам роботи над роллю.
+          .musictypes-middle__imgs
+            img(src="images/akt-1.webp", alt="middle").musictypes-middle__img
+            img(src="images/akt-2.webp", alt="middle").musictypes-middle__img
+      .musictypes-bottom 
+        .musictypes-bottom__body.container
+          h2.musictypes-bottom__title Викладачі акторскої майстрерності
+          .musictypes-bottom__row 
+            .musictypes-bottom__item
+              img(src="images/bottom2.webp", alt="bottom").musictypes-bottom__img
+              h3.musictypes-bottom__item-p Пухно Валерия
+              a(href="#!").musictypes-bottom__item-btn Детальніше 
+    include components/footer.pug 
+    +footer 
+    script(src="scripts/index.js") 
