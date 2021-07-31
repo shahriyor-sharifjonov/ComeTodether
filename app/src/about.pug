@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Come Together
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel="stylesheet", href="styles/index.css")
+  body
+    include components/header.pug 
+    +header2
+    .school 
+      .school__body.container 
+        h1.school__title Про школу
+        p.school__p Артистами не народжуються, ними стають!
+        .school__row 
+          .school__item.school__texts 
+            p.school__item-p Come Together - #твій_простір_для_творчості. Простір, у якому ви можете навчитися професійно грати на музичних інструментах, співати або просто займатися музикою для свого задоволення. Ми допоможемо втілити вашу мрію у реальність! <br>Тут може займатися кожен незалежно від віку та рівня володіння інструментом. <br>Простір 'Come Тogether' - одна із наймолодших та найперспективніших музичних шкіл Києва. 
+            .school__item-illustrations
+              img(src="images/looking.webp", alt="looking illustration").school__item-illustration
+              img(src="images/success.webp", alt="looking illustration").school__item-illustration
+          .school__item.school__imgs
+            .school__item-img-parent
+              img(src="images/pianobg.webp", alt="piano rooom").school__item-img
+        .school__row 
+          .school__item.school__imgs
+            .school__item-img-parent
+              img(src="images/pianobg2.webp", alt="piano rooom").school__item-img
+          .school__item.school__texts 
+            p.school__item-p Come Together - #твій_простір_для_творчості. Простір, у якому ви можете навчитися професійно грати на музичних інструментах, співати або просто займатися музикою для свого задоволення. Ми допоможемо втілити вашу мрію у реальність! <br>Тут може займатися кожен незалежно від віку та рівня володіння інструментом. <br>Простір 'Come Тogether' - одна із наймолодших та найперспективніших музичних шкіл Києва. 
+            .school__item-illustrations
+              img(src="images/hello.webp", alt="looking illustration").school__item-illustration
+              img(src="images/music.webp", alt="looking illustration").school__item-illustration
+        .school__row 
+          .school__item.school__texts 
+            p.school__item-p Come Together - #твій_простір_для_творчості. Простір, у якому ви можете навчитися професійно грати на музичних інструментах, співати або просто займатися музикою для свого задоволення. Ми допоможемо втілити вашу мрію у реальність! <br>Тут може займатися кожен незалежно від віку та рівня володіння інструментом. <br>Простір 'Come Тogether' - одна із наймолодших та найперспективніших музичних шкіл Києва. 
+            .school__item-btns
+              a(href="forming.html").school__item-btn Записатись
+              a(href="rules.html").school__item-btn Правила школи
+          .school__item.school__imgs
+            .school__item-img-parent
+              img(src="images/pianobg.webp", alt="piano rooom").school__item-img
+    include components/footer.pug 
+    +footer 
+    script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+    script(src="scripts/slider.js")
+    script(src="scripts/index.js") 
