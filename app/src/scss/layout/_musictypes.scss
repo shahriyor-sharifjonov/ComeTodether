@@ -85,6 +85,11 @@
         font-size: 18px;
       }
     }
+    &__space{
+      height: 25px;
+      width: 100%;
+      background: transparent;
+    }
     &__imgs{
       display: flex;
       justify-content: flex-end;
