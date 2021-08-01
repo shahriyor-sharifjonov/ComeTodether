@@ -36,7 +36,7 @@
     width: 100%;
     transition: 200ms ease;
     pointer-events: none;
-    &:hover{
+    &.current{
       background: rgba(255, 214, 0, 0.58);
     }
     @include media(992){

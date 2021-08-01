@@ -9,14 +9,33 @@ html(lang="en")
     link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
     link(rel="stylesheet", href="styles/index.css")
   body
-    include components/header.pug 
-    +header2 
+    header.header2 
+      navbar.header2__nav.container
+        a(href="index.html").header2__logo
+          img(src="images/logo.webp", alt="ComeTogether").header2__logo-img
+        .header__menu
+          ul.header2__list
+            li.header2__li
+              a(href="index.html").header2__link Головна
+            li.header2__li
+              a(href="about.html").header2__link Про школу
+            li.header2__li 
+              a(href="teachers.html").header2__link Викладачі
+            li.header2__li 
+              a(href="kurs.html").header2__link Курс
+            li.header2__li 
+              a(href="index.html#prices").header2__link Ціни
+            li.header2__li 
+              a(href="contact.html").header2__link.current Контакти
+          a(href="forming.html").header2__btn Пробне заняття 
+        button.header__button 
+          span.header__button-line
     .contact  
       .contact__body.container 
         h1.contact__title Контакти 
         .contact__row   
           .contact__item  
-            img(src="images/map.webp", alt="map").contact__img
+            iframe.contact__img(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166.95184935012168!2d37.836257650954785!3d47.970620074663884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e09171ce520dff%3A0x5855cdcd37f9e525!2z0JfQu9Cw0YLQvtGD0YHRgtGW0LLRgdGM0LrQsCDQstGD0LvQuNGG0Y8sIDIsINCU0L7QvdC10YbRjNC6LCDQlNC-0L3QtdGG0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgODMwMDA!5e0!3m2!1sru!2s!4v1627799842801!5m2!1sru!2s" width="800" height="450" style="border:1;" allowfullscreen="" loading="lazy")
           .contact__item 
             p.icon-golden-location.contact__item__link вул. Златоустівська 2/4, 11 офіс (4 поверх)
             a(href="tel:+38(099)413-59-60").contact__item__link +38(099)413-59-60

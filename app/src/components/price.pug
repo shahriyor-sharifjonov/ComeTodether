@@ -1,5 +1,5 @@
 mixin price()
-  .price 
+  .price#prices
     .price__body.container 
       h1.price__title Ціни
       .price__row
@@ -16,7 +16,7 @@ mixin price()
           p.price__item-p 1400 грн
           a(href="forming.html").price__item-btn Купити 
       .price__row
-        .price__item
+        .price__item.current
           h2.price__item-title Абонемент на 8 занять
           p.price__item-p 2600 грн
           a(href="forming.html").price__item-btn Купити 

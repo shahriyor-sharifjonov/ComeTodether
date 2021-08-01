@@ -9,8 +9,27 @@ html(lang="en")
     link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
     link(rel="stylesheet", href="styles/index.css")
   body
-    include components/header.pug 
-    +header2
+    header.header2 
+      navbar.header2__nav.container
+        a(href="index.html").header2__logo
+          img(src="images/logo.webp", alt="ComeTogether").header2__logo-img
+        .header__menu
+          ul.header2__list
+            li.header2__li
+              a(href="index.html").header2__link Головна
+            li.header2__li
+              a(href="about.html").header2__link Про школу
+            li.header2__li 
+              a(href="teachers.html").header2__link Викладачі
+            li.header2__li 
+              a(href="kurs.html").header2__link Курс
+            li.header2__li 
+              a(href="index.html#prices").header2__link Ціни
+            li.header2__li 
+              a(href="contact.html").header2__link Контакти
+          a(href="forming.html").header2__btn Пробне заняття 
+        button.header__button 
+          span.header__button-line
     .forming 
       h1.forming__title Заявка на пробне заняття
       form(action="send.html").forming__form
